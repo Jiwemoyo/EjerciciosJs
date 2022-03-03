@@ -1,6 +1,13 @@
-// Ingrese dos números y realice una suma con los mismos. 
-let val1=prompt("Ingrese el valor 1")
-let val2=prompt("Ingrese el valor 2")
-let suma = parseInt(val1) + parseInt(val2)
-document.write(`La suma de: ${val1} y ${val2} es ${suma}`)
+function sumar() {
+    var num1=document.getElementById("num1").value
+    var num2=document.getElementById("num2").value
 
+    if (num1=="") {
+        num1=0;
+    }
+    if(num2==""){
+        num2=0;
+    }
+    var sumar=parseInt(num1)+parseInt(num2)
+    document.getElementById("resultado").value=sumar
+}
