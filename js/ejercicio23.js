@@ -5,7 +5,7 @@ var num = new Number();
 var sum = new Number();
 var numfinal = new Number();
 var contador = new Number();
-document.write("Dame un numero : ",'<BR/>');
+
 num = Number(prompt("¡Dame un numero!"));
 sum = 0;
 for (contador=num+1;contador<=num*3;contador++) {
@@ -13,4 +13,6 @@ for (contador=num+1;contador<=num*3;contador++) {
         sum = sum+contador;
     }
 }
-document.write("la suma de los ",num," numero pares que vienen despues de ",num," es: ",sum,'<BR/>');
+
+
+document.getElementById("resultado").innerHTML=`hola el resultado es ${sum}`
