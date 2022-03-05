@@ -1,16 +1,25 @@
-var contador1 =0
-var contador2 =0
-var modulo =0
-var numero=0
 function calculo() {
-    var numero = document.getElementById("ingreso").value
+    for (let index = 0; index < 5; index++) {
+    var num = document.getElementById("ingreso").value
+    var par= document.getElementById("numeroPar")
+    var impar= document.getElementById("numeroImpar")
+    num=parseInt(num)
+    contenedor1=0
+    contenedor2=0
+    modulo=(num%2)
 
-    var modulo =(numero%2)
-
-    if (modulo==0) {
-        var contador1 = contador1+1
-    } else {
-        var contador2 =contador2+1
     }
-    console.log(contador1)
+    for (let index = 0; index < 5; index++) {
+        if (modulo === 0) {
+            contenedor1 = contenedor1+1
+        } else {
+            contenedor2 = contenedor2+1
+        } 
+    }
+     
+        
+    
+ 
+    par.innerHTML=contenedor1
+    impar.innerHTML=contenedor2
 }
