@@ -1,74 +1,96 @@
-var fecha = new String();
-var d = new Number();
-var m = new Number();
-var a = new Number();
-var b = new Number();
-document.write("INGRESE FECHA DD/MM/AAAA : ");
-fecha = prompt("INGRESE FECHA DD/MM/AAAA : ");
-d = Number(String.substring(fecha,-1,2));
-m = Number(String.substring(fecha,3,5));
-a = Number(String.substring(fecha,6,10));
-document.write("Día : ",d,'<BR/>');
-document.write("Mes : ",m,'<BR/>');
-document.write("Año : ",a,'<BR/>');
-document.write("",'<BR/>');
-if ((a>=1582 && a<=3000) && (m>=1 && m<=30) && (d>=1 && d<=31)) {
-    if (((a%4)==0 && (a%100)!=0 || (a%400)==0)) {
-        document.write("AÑO BISIESTO",'<BR/>');
-        b = 0;
-    } else {
-        document.write("AÑO NO ES BISIESTO",'<BR/>');
-        b = 1;
-    }
-    if (b==0) {
-        switch (m) {
-        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-            if ((d>=1 && d<=31)) {
-                document.write("FECHA CORRECTA",'<BR/>');
-            } else {
-                document.write("FECHA NO CORRECTA",'<BR/>');
-            }
-            break;
-        case 2:
-            if ((d>=1 && d<=29)) {
-                document.write("FECHA CORRECTA",'<BR/>');
-            } else {
-                document.write("FECHA NO CORRECTA",'<BR/>');
-            }
-            break;
-        case 4: case 6: case 9: case 11:
-            if ((d>=1 && d<=30)) {
-                document.write("FECHA CORRECTA",'<BR/>');
-            } else {
-                document.write("FECHA NO CORRECTA",'<BR/>');
-            }
-            break;
+function ejercicio11(){
+    let inputFecha = document.getElementById('fecha')
+
+    let respuestaDiv = document.getElementById('respuesta')
+
+    let fecha //string
+    let D,M,A,B //int
+
+    //Leer fecha;
+    inputFecha.addEventListener('keyup',(e)=>{ 
+        if((e.path[0].value).match(/[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}/g)){ //Comprobamos con expresiones regulares si la entrada es correcta
+            fecha = e.path[0].value
+            respuesta()
+        }else{
+            respuestaDiv.innerHTML = `Ingrese la fecha con el siguiente formato DD/MM/AAAA` 
         }
-    } else {
-        switch (m) {
-        case 1: case 3: case 5: case 7: case 8: case 10: case 12:
-            if ((d>=1 && d<=31)) {
-                document.write("FECHA CORRECTA",'<BR/>');
-            } else {
-                document.write("FECHA NO CORRECTA",'<BR/>');
+    })
+
+
+    function respuesta(){
+        //D <- CONVERTIRANUMERO(SUBCADENA(fecha,0,2))
+        D = parseInt(fecha.substr(0,2))
+        //M <- CONVERTIRANUMERO(SUBCADENA(fecha,4,5))
+        M = parseInt(fecha.substr(3,5))
+        //A <- CONVERTIRANUMERO(SUBCADENA(fecha,7,10))
+        A = parseInt(fecha.substr(6,10))
+
+        //Escribir 'Día : ',D
+        respuestaDiv.innerHTML = `Día: ${D} </br>`
+        //Escribir 'Mes : ',M
+        respuestaDiv.innerHTML += `Mes: ${M}</br>`
+        //Escribir 'Año : ',A
+        respuestaDiv.innerHTML += `Año: ${A} </br>`
+
+
+        if((A >= 1528 && A <= 3000) &&  (M >= 1 && M <= 30) && (D >= 1 && D <= 31)){
+            if( ((A % 4)==0 && (A % 100) != 0 || (A % 400)==0) ){
+                //Escribir 'AÑO BISIESTO'
+                respuestaDiv.innerHTML += `AÑO BISIESTO </br>`
+                B = 0
+            }else{
+                //Escribir 'AÑO NO ES BISIESTO'
+                respuestaDiv.innerHTML += `AÑO NO BISIESTO </br>`
+                B = 1
             }
-            break;
-        case 2:
-            if ((d>=1 && d<=28)) {
-                document.write("FECHA CORRECTA",'<BR/>');
-            } else {
-                document.write("FECHA NO CORRECTA",'<BR/>');
+
+            if(B = 0){
+                //Segun M Hacer
+                if( M == 1 || M == 3 ||  M == 5 || M== 7 || M == 8 || M== 10 || M == 12){
+                    if(D >= 1 && D <= 31){
+                        respuestaDiv.innerHTML += `FECHA CORRECTA`
+                    }else{
+                        respuestaDiv.innerHTML += `FECHA NO CORRECTA`
+                    }
+                }else if( M == 2){
+                    if(D >= 1 && D <= 29){
+                        respuestaDiv.innerHTML += `FECHA CORRECTA`
+                    }else{
+                        respuestaDiv.innerHTML += `FECHA NO CORRECTA`
+                    }
+                }else if(M == 4 || M == 6 ||  M == 9 || M== 11){
+                    if(D >= 1 && D <= 30){
+                        respuestaDiv.innerHTML += `FECHA CORRECTA`
+                    }else{
+                        respuestaDiv.innerHTML += `FECHA NO CORRECTA`
+                    }
+                }
+            }else{
+                //Segun M Hacer
+                if( M == 1 || M == 3 ||  M == 5 || M== 7 || M == 8 || M== 10 || M == 12){
+                    if(D >= 1 && D <= 31){
+                        respuestaDiv.innerHTML += `FECHA CORRECTA`
+                    }else{
+                        respuestaDiv.innerHTML += `FECHA NO CORRECTA`
+                    }
+                }else if( M == 2){
+                    if(D >= 1 && D <= 28){
+                        respuestaDiv.innerHTML += `FECHA CORRECTA`
+                    }else{
+                        respuestaDiv.innerHTML += `FECHA NO CORRECTA`
+                    }
+                }else if(M == 4 || M == 6 ||  M == 9 || M== 11){
+                    if(D >= 1 && D <= 30){
+                        respuestaDiv.innerHTML += `FECHA CORRECTA`
+                    }else{
+                        respuestaDiv.innerHTML += `FECHA NO CORRECTA`
+                    }
+                }
             }
-            break;
-        case 4: case 6: case 9: case 11:
-            if ((d>=1 && d<=30)) {
-                document.write("FECHA CORRECTA",'<BR/>');
-            } else {
-                document.write("FECHA NO CORRECTA",'<BR/>');
-            }
-            break;
+        }else{
+            //Escribir 'Error en la fecha'
+            respuestaDiv.innerHTML += `ERROR EN LA FECHA`
         }
     }
-} else {
-    document.write("Error en la fecha",'<BR/>');
+    //FinAlgoritmo
 }
