@@ -18,7 +18,7 @@
 		}
 	}
 
-	document.getElementById("sub").innerHTML=`Has ingresado el numero 10`
+	document.getElementById("sub").innerHTML=`Has ingresado el numero ${num}`
 	document.getElementById("sumaPar").innerHTML=`La suma de los pares es: ${numpar}`
 	document.getElementById("sumaImpar").innerHTML=`la suma de los impares es ${numimpar}`
 	

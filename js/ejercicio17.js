@@ -9,10 +9,17 @@
 	promedio = 0;
 	
 	n = Number(prompt("Cuantas notas desea ingresar"));
+	alert(`Usted va a ingresar ${n} notas`)
 	for (i=1;i<=n;i++) {
+
 		
-		notas = Number(prompt());
+		
+		notas = Number(prompt(`Ingrese la ${i}ª nota`));
+		
 		suma = suma+notas;
 	}
 	promedio = suma/n;
-	document.write("El promedio de las ",n," notas es de: ",promedio,'<BR/>');
+	document.getElementById("notas").innerHTML=`Notas ingresadas: ${n}`
+	
+
+	document.getElementById("promedio").innerHTML=`El promedio de las tres notas es: ${promedio}`
