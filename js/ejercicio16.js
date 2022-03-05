@@ -17,6 +17,9 @@
 			numimpar = contador+numimpar;
 		}
 	}
-	document.write("Suma de pares: ",numpar,'<BR/>');
-	document.write("suma de impares: ",numimpar,'<BR/>');
+
+	document.getElementById("sub").innerHTML=`Has ingresado el numero 10`
+	document.getElementById("sumaPar").innerHTML=`La suma de los pares es: ${numpar}`
+	document.getElementById("sumaImpar").innerHTML=`la suma de los impares es ${numimpar}`
+	
 	
