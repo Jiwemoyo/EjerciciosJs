@@ -13,9 +13,12 @@
 	d3 = r1%10;
 	document.write(" ",'<BR/>');
 	if (num==((d3*100)+(d2*10)+d1)) {
-		document.write("El numero es palindromo",'<BR/>');
+		document.getElementById("subtitulo").innerHTML=`El numero: ${num}`
+		document.getElementById("resultado").innerHTML="Si es palindromo"
 	} else {
-		document.write("El numero NO ES palindromo",'<BR/>');
+		document.getElementById("subtitulo").innerHTML=`El numero: ${num}`
+		document.getElementById("resultado").innerHTML="No es palindromo"
 	}
 
 
+	
