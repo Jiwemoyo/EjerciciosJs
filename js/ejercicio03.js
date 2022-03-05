@@ -7,4 +7,9 @@ let subTotal = parseInt(costoUnitario)*parseInt(unidades)
 let descuento =parseInt(subTotal)*0.1
 let total =subTotal-descuento
 
-document.write(`El sub total es de: ${subTotal} <br> Su descuento es de: ${descuento} <br>-----------------------------------<br> El total de su factura es: ${total}`)
+document.getElementById("resultado1").innerHTML=nombreProducto
+document.getElementById("resultado2").innerHTML=costoUnitario
+document.getElementById("resultado3").innerHTML=unidades
+document.getElementById("resultado4").innerHTML=total
+
+/*document.write(`El sub total es de: ${subTotal} <br> Su descuento es de: ${descuento} <br>-----------------------------------<br> El total de su factura es: ${total}`)*/
