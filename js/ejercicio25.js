@@ -1,22 +1,22 @@
 var n1 = new Number();
 var n2 = new Number();
 var n3 = new Number();
-document.write("Ingrese el primer número",'<BR/>');
 n1 = Number(prompt("Ingrese el primer número"));
-document.write("Ingrese el segundo número",'<BR/>');
+document.getElementById("primero").innerHTML=n1;
 n2 = Number(prompt("Ingrese el segundo número"));
-document.write("Ingrese el tercer número",'<BR/>');
+document.getElementById("segundo").innerHTML=n2;
 n3 = Number(prompt("Ingrese el tercer número"));
+document.getElementById("tercero").innerHTML=n3;
 if ((n1!=n2 && n1!=n3 && n2!=n3)) {
     if ((n1>n2 && n1<n3 || n1>n3 && n1<n2)) {
-        document.write("1. En la mitad esta: ",n1,'<BR/>');
+        document.getElementById("mid").innerHTML=`El número de la mitad es: ${n1}`
     } else {
         if ((n2>n1 && n2<n3 || n2>n1 && n2<n3)) {
-            document.write("2. En la mitad esta: ",n2,'<BR/>');
+            document.getElementById("mid").innerHTML=`El número de la mitad es: ${n2}`
         } else {
-            document.write("3. En la mitad esta: ",n3,'<BR/>');
+            document.getElementById("mid").innerHTML=`El número de la mitad es: ${n3}`
         }
     }
 } else {
-    document.write("Los numeros no son diferente",'<BR/>');
+    document.getElementById("error").innerHTML="ERROR: Los numeros no son diferentes";
 }
