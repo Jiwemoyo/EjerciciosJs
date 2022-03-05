@@ -14,11 +14,13 @@
 			inv = (inv*10)+(n%10);
 			n = Math.trunc(n/10);
 		} while (n>0);
-		document.write(inv,'<BR/>');
+		
 		if (inv==n1) {
-			document.write("El numero es palindromo",'<BR/>');
+			document.getElementById("subtitulo").innerHTML=`El numero: ${n1}`
+			document.getElementById("resultado").innerHTML="Si es palindromo"
 		} else {
-			document.write("El numero no es palindromo",'<BR/>');
+			document.getElementById("subtitulo").innerHTML=`El numero: ${n1}`
+			document.getElementById("resultado").innerHTML="No es palindromo"
 		}
 	} while (m!=n);
 

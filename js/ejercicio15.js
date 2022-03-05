@@ -9,6 +9,7 @@
 	num = 0;
 	parr = 0;
 	imp = 0;
+	alert("ingrese 10 numeros y te dire cuantos son pares y cuantos impares")
 	for (contador=1;contador<=10;contador++) {
 		
 		num = Number(prompt(`Ingrese el ${contador} numero de un total de 10`));
