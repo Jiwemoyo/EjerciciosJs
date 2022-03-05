@@ -42,5 +42,6 @@
 			}
 		}
 	}
-	document.write("Ascendente : ",c,", ",b,", ",a,'<BR/>');
-	document.write("Descendente : ",a,", ",b,", ",c,'<BR/>');
+	document.getElementById("ordenAs").innerHTML=`Orden ascendente: ${c} 🢚 ${b} 🢚 ${a}`
+	document.getElementById("ordenDes").innerHTML=`Orden desscendente: ${a} 🢘 ${b} 🢘 ${c}`
+	
