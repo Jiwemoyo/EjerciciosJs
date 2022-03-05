@@ -30,3 +30,16 @@
   font-size: 30px;
   font-family: MS PGothic;
 }
+
+.contenedor{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  
+
+}
+
+a:hover{
+  background-color: #F5F5F5;
+  color: #F05454;
+}
