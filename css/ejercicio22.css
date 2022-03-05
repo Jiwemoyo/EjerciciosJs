@@ -5,25 +5,17 @@
 }
 
 #fondo {
-    background-image: linear-gradient(
-        115deg,
-      rgba(24, 23, 23, 0.5),
-      rgba(3, 0, 0, 0.5)
-    ),
-    url(https://infinox.co.uk/images/articles/611c7b9bece7c95f92cf21c1e1e8c6ea.jpeg);
+    background-color: #30475E;
     color: white;
-    font-size: 48px;
+    font-size: 55px;
     text-align: center;
 }
 
 #e22 {
-  border: 2px solid rgb(255, 255, 255);
   font-size: 60px;
   font-family: Lucida Calligraphy;
 }
-#e22:hover {
-  box-shadow: 0px -1px 10px 5px rgb(255, 255, 255);
-}
+
 
 #doit{
   margin-top: 20px;
@@ -35,11 +27,25 @@
   margin-top: 100px;
   display: flex;
   justify-content: space-around;
-  
-
+  height: 50px;
+  font-size: 25px;
 }
 
 a:hover{
   background-color: #F5F5F5;
   color: #F05454;
+}
+
+.fondo2 {
+  background-color: #30475E;
+  height: 800px;
+}
+
+a{
+  text-decoration: none;
+  background-color: #F05454;
+  color:#F5F5F5 ;
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: -50px;
 }
