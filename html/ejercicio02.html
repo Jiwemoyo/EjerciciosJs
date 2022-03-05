@@ -7,18 +7,19 @@
     <title>Ejercicio2</title>
 </head>
 <body>
-    <div class="titulo">
-        <h2>Sueldo Empleado</h2>
-    </div>
-   <div>
-    <h3>¿Horas trabajadas al mes?</h3>
-    <input type="text" id="num1" onkeyup="sumar()">
-    <h3>¿Cuanto gana por hora?</h3>
-    <input type="text" id="num2" onkeyup="sumar()">
-    <span>=</span>
-    <input type="text" id="resultado" readonly>
-   </div>
-    
+    <h1>Factura Simple</h1>
+    <h2>Ingrese el nombr del trabajador</h2>
+    <input type="text" id="trabajador">
+    <!--<button onclick="nombre()">Enviar</button>-->
+    <h2>Cuantas horas trabajo en el mes?</h2>
+    <input type="text" id="trabajoH">
+    <!--<button onclick="nombre()">Enviar</button> -->
+    <h2>Cuanto gana por hora?</h2>
+    <input type="text" id="gananciaH">
+    <!--<button onclick="nombre()">Enviar</button> -->
+    <h2>Factura</h2>
+    <textarea name="" id="Resultado" cols="30" rows="5" readonly></textarea> <br>
+    <button onclick="nombre()">Facturar</button>
      
     <script src="/js/ejercicio02.js"></script>
 </body>
