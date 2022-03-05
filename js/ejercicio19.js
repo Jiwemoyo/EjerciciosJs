@@ -1,5 +1,4 @@
-function ejercicio_19() {
-	// Hacer un programa que ordene los n�meros ingresados de mayor a menor y de menor a mayor.
+
 	var n1 = new Number();
 	var n2 = new Number();
 	var n3 = new Number();
@@ -45,6 +44,3 @@ function ejercicio_19() {
 	}
 	document.write("Ascendente : ",c,", ",b,", ",a,'<BR/>');
 	document.write("Descendente : ",a,", ",b,", ",c,'<BR/>');
-}
-
-ejercicio_19()

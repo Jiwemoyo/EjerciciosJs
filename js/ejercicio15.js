@@ -1,10 +1,7 @@
-// Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
-// Es posible que el codigo generado no sea completamente correcto. Si encuentra
-// errores por favor reportelos en el foro (http://pseint.sourceforge.net).
 
-function paresimpares() {
-	// Elaborar un programa que permita ingresar 10 n�mero enteros y muestre la
-	// cantidad de n�meros pares e impares ingresados
+
+
+	
 	var num = new Number();
 	var imp = new Number();
 	var parr = new Number();
@@ -24,6 +21,4 @@ function paresimpares() {
 	document.write("la cantidad de numeros pares ingresados es de: ",parr,'<BR/>');
 	document.write("***********************************************",'<BR/>');
 	document.write("la cantidad de numero impares es de: ",imp,'<BR/>');
-	// Alessandro Cisneros
-}
-paresimpares()
+	
