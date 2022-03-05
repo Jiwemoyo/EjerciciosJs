@@ -1,25 +1,30 @@
-function calculo() {
-    for (let index = 0; index < 5; index++) {
-    var num = document.getElementById("ingreso").value
-    var par= document.getElementById("numeroPar")
-    var impar= document.getElementById("numeroImpar")
-    num=parseInt(num)
-    contenedor1=0
-    contenedor2=0
-    modulo=(num%2)
 
-    }
-    for (let index = 0; index < 5; index++) {
-        if (modulo === 0) {
-            contenedor1 = contenedor1+1
-        } else {
-            contenedor2 = contenedor2+1
-        } 
-    }
-     
-        
-    
- 
-    par.innerHTML=contenedor1
-    impar.innerHTML=contenedor2
-}
+
+
+	
+	var num = new Number();
+	var imp = new Number();
+	var parr = new Number();
+	var contador = new Number();
+	num = 0;
+	parr = 0;
+	imp = 0;
+	alert("ingrese 10 numeros y te dire cuantos son pares y cuantos impares")
+	for (contador=1;contador<=10;contador++) {
+		
+		num = Number(prompt(`Ingrese el ${contador} numero de un total de 10`));
+		if (num%2==0) {
+			parr = parr+1;
+		} else {
+			imp = imp+1;
+		}
+	}
+
+	var par=document.getElementById("par")
+	var impar=document.getElementById("Impar")
+
+	par.innerHTML=parr
+	impar.innerHTML=imp 
+
+
+
