@@ -1,25 +1,26 @@
 var nota = new Number();
 	var nombre = new String();
-	document.write("Ingrese el nombre del estudiante",'<BR/>');
 	nombre = prompt("Ingrese el nombre del estudiante");
-	document.write("Ingrese la nota del estudiante",'<BR/>');
+	document.getElementById("cuatro").innerHTML=`El nombre del estudiante es: ${nombre}`;
 	nota = Number(prompt("Ingrese la nota del estudiante"));
+	document.getElementById("cinco").innerHTML=`La nota del estudiante es: ${nota}`;
+	
 	if (nota>=0 && nota<=2) {
-		document.write("El estudiante ",nombre," Necesita Reforzamiento",'<BR/>');
+		document.getElementById("seis").innerHTML=`El  estudiante : ${nombre} necesita REFORZAMIENTO`;
 	} else {
 		if (nota>=3 && nota<=4) {
-			document.write("El estudiante ",nombre," Esta Desaprobado",'<BR/>');
+			document.getElementById("siete").innerHTML=`El  estudiante : ${nombre} esta DESAPROBADO`;
 		} else {
 			if (nota>=5 && nota<=7) {
-				document.write("El estudiante ",nombre," Esta aprobado",'<BR/>');
+				document.getElementById("ocho").innerHTML=`El  estudiante : ${nombre} esta APROBADO`;
 			} else {
 				if (nota>=8 && nota<=9) {
-					document.write("El estudiante ",nombre," Tiene un promedio EXCELENTE",'<BR/>');
+					document.getElementById("nueve").innerHTML=`El  estudiante : ${nombre} tiene un promedio EXCELENTE`;
 				} else {
 					if (nota==10) {
-						document.write("El estudiante ",nombre," Esta BECADO",'<BR/>');
+						document.getElementById("diez").innerHTML=`El  estudiante : ${nombre} esta BECADO`;
 					} else {
-						document.write("Nota no valida volver a ingresar",'<BR/>');
+						document.getElementById("once").innerHTML=("Nota no valida volver a ingresar",'<BR/>');
 					}
 				}
 			}

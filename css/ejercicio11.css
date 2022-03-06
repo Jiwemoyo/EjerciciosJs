@@ -15,6 +15,7 @@
     font-size: 20px;
     font-family: Lucida Calligraphy;
     text-align: center;
+    color: #F05454;
 }
 
 #coloruno{
@@ -67,5 +68,5 @@
     font-size: 50px;
     border-radius: 20px;
     width: 300px;
-    margin-left: 470px;
+    margin-left: 450px;
 }
