@@ -1,11 +1,11 @@
 var cont, suma;
 	var n = new Number();
-	document.write("Ingrese un numero: ",'<BR/>');
 	n = Number(prompt("Ingrese un numero: "));
+	document.getElementById("ni").innerHTML=`El numero limite es: ${n}`;
 	cont = 0;
 	suma = 0;
 	do {
 		cont = cont+1;
 		suma = suma+cont;
 	} while (cont<=n);
-	document.write("La suma es : ",suma,'<BR/>');
+	document.getElementById("in").innerHTML=` La suma de numeros naturales es  ${suma}`;
