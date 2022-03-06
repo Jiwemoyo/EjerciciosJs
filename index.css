@@ -37,3 +37,7 @@ a:hover{
     background-color: #F5F5F5;
     color: #F05454;
 }
+
+.nombre {
+    font-size: 50px;
+}
