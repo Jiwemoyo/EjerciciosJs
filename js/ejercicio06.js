@@ -27,3 +27,5 @@ switch (letra) {
         alert("Es una consonante")
         break;
 }
+
+document.getElementById("resultado1").innerHTML=letra

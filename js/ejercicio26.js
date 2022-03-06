@@ -1,14 +1,4 @@
     var clave = new Number();
-	document.write("Escoja la clave hacia a donde llama:",'<BR/>');
-	document.write("(1) - 0.13$ - Estados Unidos ",'<BR/>');
-	document.write("(2) - 0.11$ -Canada",'<BR/>');
-	document.write("(3) - 0.52$ -America delsur",'<BR/>');
-	document.write("(4) - 0.99$ -America central",'<BR/>');
-	document.write("(5) - 0.17$ -Mexico",'<BR/>');
-	document.write("(6) - 0.17$ -Europa",'<BR/>');
-	document.write("(7) - 0.20$ -Asia",'<BR/>');
-	document.write("(8) - 0.59$ -África",'<BR/>');
-	document.write("(9) - 0.28$ -Oceania",'<BR/>');
 	clave = Number(prompt(
 		"Escoja la clave hacia a donde llama: 1 - EE.UU, 2 - Canada, 3 - America del Sur, 4 - America central, 5 - Mexico, 6 - Europa, 7 - Asia, 8 - África, 9 - Oceania" ));
 	switch (clave) {

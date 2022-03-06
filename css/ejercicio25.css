@@ -1,0 +1,54 @@
+a{
+    text-decoration: none;
+    background-color: #F05454;
+    color:#F5F5F5 ;
+    padding: 30px;
+    border-radius: 30px;
+}
+.contenedor{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+a:hover{
+    background-color: #F5F5F5;
+    color: #F05454;
+}
+
+body{
+    background-color: #30475E;
+    text-align: center;
+    color: #F05454;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: MS PGothic;
+    color:#F05454;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: Lucida Calligraphy;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#error {
+    font-size: 50px;
+    background-color: red;
+    border-radius: 30px;
+}
+
+#mid {
+    font-size: 60px;
+    background-color: black;
+    border-radius: 30px;
+}
