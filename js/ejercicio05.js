@@ -9,18 +9,18 @@ nota3 = parseInt(nota3)
 
 let promedio=(nota1+nota2+nota3)/3
 
-/*if (promedio >= 6.95) {
-    document.write(`Su nota promedio es de: ${promedio} <br> El estudiante ${nombre} APROBO`)
+if (promedio >= 6.95) {
+    document.getElementById("resultado5").innerHTML= (`Su nota promedio es de: ${promedio} <br> El estudiante ${nombre} APROBO`)
     
 } else {
-    document.write(`Su nota promedio es de: ${promedio} <br> El estudiante ${nombre} REPROBO`)
+    document.getElementById("resultado5").innerHTML= (`Su nota promedio es de: ${promedio} <br> El estudiante ${nombre} REPROBO`)
     
-}*/
+}
 
 document.getElementById("resultado1").innerHTML= nombre
 document.getElementById("resultado2").innerHTML= nota1
 document.getElementById("resultado3").innerHTML= nota2
 document.getElementById("resultado4").innerHTML= nota3
-document.getElementById("resultado5").innerHTML= promedio
+
 
 

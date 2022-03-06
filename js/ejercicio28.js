@@ -21,3 +21,4 @@ var n = new Number();
 		document.write("El numero no es palindromo",'<BR/>');
 		document.write("-------------------------------------",'<BR/>');
 	}
+
