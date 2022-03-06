@@ -1,0 +1,69 @@
+body{
+    text-align: center;
+    background-color: #30475E;
+}
+h1{
+    color: #F05454;
+    font-size: 100px;
+}
+h2{
+    color: #F5F5F5;
+    font-size: 50px;
+}
+
+#trabajador{
+    font-size: 50px;
+    text-align: center;
+    background-color: #F05454;
+    height: 50px;
+    width: 300px;
+}
+#trabajoH{
+    font-size: 50px;
+    text-align: center;
+    background-color: #F05454;
+    height: 50px;
+    width: 300px;
+}
+#gananciaH{
+    font-size: 50px;
+    text-align: center;
+    background-color: #F05454;
+    height: 50px;
+    width: 300px;
+}
+#Resultado{
+    color: #F5F5F5;
+    font-size: 50px;
+    text-align: center;
+    background-color: #121212;
+    height: 200px;
+    width: 500px;
+}
+
+a{
+    font-size: 50px;
+    text-decoration: none;
+    background-color: #F05454;
+    color:#F5F5F5 ;
+    padding: 30px;
+    border-radius: 30px;
+}
+.contenedor{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+a:hover{
+    background-color: #F5F5F5;
+    color: #F05454;
+}
+
+button{
+    font-size: 50px;
+    height: 100px;
+    width: 300px;
+}
