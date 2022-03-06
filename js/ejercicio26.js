@@ -9,7 +9,7 @@
 		document.write("Su total a pagar es de: ",total,"$",'<BR/>');
 		break;
 	case 2:
-		document.write("¿Cuanto duro la llamada?",'<BR/>');
+		document.write("¿Cuanto duro la llamada?",total,'<BR/>');
 		tiempollamada = Number(prompt("¿Cuantos minutos duro la llamada?"));
 		total = 0.11*tiempollamada;
 		document.write("Su total a pagar es de: ",total,"$",'<BR/>');
