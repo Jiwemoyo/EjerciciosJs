@@ -3,14 +3,15 @@ var num = new Number();
 	var nummax = new Number();
 	nummax = 0;
 	num = 0;
-	document.write("Escriba 3 numeros para mostrarle cual es el mayor",'<BR/>');
+	document.getElementById("ni").innerHTML=`Escriba tres numeros para mostrarle cual es el mayor de ellos `;
 	for (contador=1;contador<=3;contador++) {
-		document.write("Escribe un numero: ",'<BR/>');
-		num = Number(prompt("Escribe un numero: "));
+		num = Number(prompt("Escribe tres numeros: "));
+		document.getElementById("in").innerHTML=`Escribe un numero ${num}`;
+		
 		if (num>nummax) {
 			nummax = num;
 		} else {
 			num = 0;
 		}
 	}
-	document.write("El numero de mayor rango es: ",nummax,'<BR/>');
+	document.getElementById("di").innerHTML=`El numero de mayor rango es ${nummax}`;

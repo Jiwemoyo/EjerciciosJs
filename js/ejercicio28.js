@@ -13,5 +13,13 @@ var n = new Number();
 	if (inv==n1) {
 		document.getElementById("si").innerHTML="El numero si es palindromo";
 	} else {
+<<<<<<< HEAD
 		document.getElementById("no").innerHTML="El numero no es palindromo";
 	}
+=======
+		document.write("-------------------------------------",'<BR/>');
+		document.write("El numero no es palindromo",'<BR/>');
+		document.write("-------------------------------------",'<BR/>');
+	}
+
+>>>>>>> d1e7a835ec167b653660f1c6ad6ac76fff57e9b1
