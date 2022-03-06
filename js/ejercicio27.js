@@ -10,7 +10,7 @@ for (i=0;i<=2;i++) {
     prom = 0;
     nombre = prompt("Nombre del alumno: ");
     document.getElementById("Alumno1").innerHTML
-    n = Number(prompt("Numero de notas a ingresar: "));
+    n = Number(prompt("Numero de notas a ingresar para calcular el promedio: "));
     document.getElementById("notas").innerHTML  
     
     contnot = 1;
