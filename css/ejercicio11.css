@@ -2,7 +2,7 @@
     background-color: #30475E;
     color: white;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 #uno{
     font-size: 50px;
@@ -15,6 +15,7 @@
     font-size: 20px;
     font-family: Lucida Calligraphy;
     text-align: center;
+    color: #F05454;
 }
 
 #coloruno{
@@ -64,8 +65,5 @@
     background-color: black;
     text-align: center;
     padding: 10px;
-    font-size: 50px;
     border-radius: 20px;
-    width: 300px;
-    margin-left: 470px;
 }
