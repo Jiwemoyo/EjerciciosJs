@@ -1,9 +1,8 @@
 var cont, m, n, num, p, q;
 var acumulador = new String();
-document.write("-----------------------------",'<BR/>');
-document.write("Ingrese cualquier numero",'<BR/>');
 num = prompt("Ingrese cualquier numero");
-document.write("-----------------------------",'<BR/>');
+document.getElementById("digito").innerHTML=`Número ingresado: ${num}`
+
 if (num<3) {
     document.write("Numero no adecuado ",'<BR/>');
 } else {
@@ -27,4 +26,3 @@ if (num<3) {
         document.write(acumulador,'<BR/>');
     }
 }
-document.write("-----------------------------",'<BR/>');
