@@ -1,6 +1,6 @@
 var nota = new Number();
 	var nombre = new String();
-	nombre = prompt("Ingrese el nombre del estudiante");
+	nombre = prompt("Ingrese el nombre del estudiante(para clasificarlo de acuerdo a su nota)");
 	document.getElementById("cuatro").innerHTML=`El nombre del estudiante es: ${nombre}`;
 	nota = Number(prompt("Ingrese la nota del estudiante (del 1 al 10)"));
 	document.getElementById("cinco").innerHTML=`La nota del estudiante es: ${nota}`;
