@@ -4,12 +4,15 @@
 	var total = new Number();
 	var pa = new Number();
 	var pd = new Number();
-	document.write("Ingrese la cantidad de aprobados",'<BR/>');
 	ca = Number(prompt("Ingrese la cantidad de aprobados"));
-	document.write("Ingrese la cantidad de desaprobados",'<BR/>');
+	document.getElementById("ni").innerHTML=`Ingrese la cantidad de aprobados: ${ca} `;
 	cd = Number(prompt("Ingrese la cantidad de desaprobados"));
+	document.getElementById("in").innerHTML=`Ingrese la cantidad de desaprobados: ${cd} `;
 	total = ca+cd;
 	pa = ca*100/total;
 	pd = cd*100/total;
-	document.write("Porcentaje de aprobados: ",pa," % ",'<BR/>');
-	document.write("Porcentaje de desaprobados: ",pd," % ",'<BR/>');
+	document.getElementById("di").innerHTML=`Porcentaje de aprobados:  ${pa} % `;
+	document.getElementById("id").innerHTML=`Porcentaje de desaprobados:  ${pd} %`;
+
+
+
