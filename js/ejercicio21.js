@@ -6,7 +6,7 @@
 	var m = new Number();
 	m = 0;
 	do {
-		
+		alert("palindromo")
 		n = Number(prompt("Ingrese un numero de 4 o cinco cifras"));
 		n1 = n;
 		inv = 0;
